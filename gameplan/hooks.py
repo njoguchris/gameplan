@@ -53,11 +53,13 @@ fixtures = [
 
 website_route_rules = [
 	{"from_route": "/g/<path:app_path>", "to_route": "g"},
+	{"from_route": "/gameplan/<path:app_path>", "to_route": "g"},
 ]
 
 website_redirects = [
 	{"source": r"/teams(/.*)?", "target": r"/g\1"},
 	{"source": "/gameplan", "target": "/g/login"},
+	{"source": "/gl", "target": "/g/login"},
 ]
 
 # Generators
