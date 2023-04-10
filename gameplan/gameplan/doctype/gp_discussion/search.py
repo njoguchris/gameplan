@@ -3,9 +3,10 @@
 
 from __future__ import unicode_literals
 import frappe
-from redis.commands.search.field import TextField, NumericField
-from redis.commands.search.indexDefinition import IndexDefinition
-from redis.commands.search.query import Query
+#from redis.commands.search.field import TextField, NumericField
+#from redis.commands.search.indexDefinition import IndexDefinition
+#from redis.commands.search.query import Query
+from redisearch import TextField, NumericField, IndexDefinition, Query
 from frappe.utils import strip_html_tags, update_progress_bar
 from frappe.utils.redis_wrapper import RedisWrapper
 from redis.exceptions import ResponseError
